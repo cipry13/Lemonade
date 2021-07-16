@@ -71,12 +71,12 @@ class MainActivity : AppCompatActivity() {
         lemonImage!!.setOnClickListener {
             clickLemonImage()
             setViewElements()
-            Log.d("Debug", "state: $lemonadeState /n")
+            Log.d("Debug", "state: $lemonadeState \n")
             // TODO: call the method that handles the state when the image is clicked
         }
         lemonImage!!.setOnLongClickListener {
             // TODO: replace 'false' with a call to the function that shows the squeeze count
-            false
+            showSnackbar()
         }
     }
 
